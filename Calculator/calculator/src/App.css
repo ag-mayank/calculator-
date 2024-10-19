@@ -1,0 +1,123 @@
+/* Full screen app container with a beautiful background */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Heading style for the calculator */
+.calculator-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px; /* Increased bottom margin for spacing */
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Overall container for the calculator */
+.calculator {
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f7f7f7;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Display of the calculator */
+.display {
+  height: 70px;
+  background-color: #333;
+  color: #fff;
+  text-align: right;
+  font-size: 36px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button container with a grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Button styles */
+.button {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #ccc;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  background-color: #bbb;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.operator {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.operator:hover {
+  background-color: #e68a00;
+}
+
+.operator:active {
+  background-color: #cc7a00;
+}
+
+.clear {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.clear:hover {
+  background-color: #d32f2f;
+}
+
+.clear:active {
+  background-color: #b71c1c;
+}
+
+.equals {
+  background-color: #4caf50;
+  color: white;
+  grid-column: span 2;
+}
+
+.equals:hover {
+  background-color: #388e3c;
+}
+
+.equals:active {
+  background-color: #2e7d32;
+}
+
+.scientific {
+  background-color: #2196f3;
+  color: white;
+}
+
+.scientific:hover {
+  background-color: #1976d2;
+}
+
+.scientific:active {
+  background-color: #0d47a1;
+}
